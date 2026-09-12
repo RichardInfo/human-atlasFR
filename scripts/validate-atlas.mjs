@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-const filename=process.argv[2]??'atlas.json';
+const filename=process.argv[2]??'atlas_fr.json';
 const base=new URL('../public/models/',import.meta.url),atlas=JSON.parse(fs.readFileSync(new URL(filename,base)));
 assert.equal(atlas.parts.length,2234);assert.equal(atlas.concepts.length,3432);
 const ids=new Set(atlas.parts.map(p=>p.id));assert.equal(ids.size,2234);
