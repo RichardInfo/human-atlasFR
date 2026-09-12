@@ -220,7 +220,7 @@ export default function Home() {
       <div className="vignette" />
       <header className="identity">
         <div className="eyebrow">
-          <span className="status-dot" /> INTERACTIVE ANATOMY
+          <span className="status-dot" /> INTERACTIVE ANATOMY FOR LILEEN ONLY
         </div>
         <h1>
           Human Atlas
@@ -230,7 +230,7 @@ export default function Home() {
         </h1>
         <div className="identity-meta">
           {atlas ? atlas.parts.length.toLocaleString() : "2,234"} modeled pieces{" "}
-          <span>·</span> BodyParts3D
+          <span>·</span> Oscar édition
         </div>
       </header>
       <nav className="top-actions" aria-label="Explorer panels">
